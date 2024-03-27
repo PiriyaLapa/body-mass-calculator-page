@@ -10,9 +10,10 @@ const GlobalStyles = createGlobalStyle<{}>`
     body {
         // Mobile
         width:100%;
-        background-color:#121725;
         min-height:100vh;
         overflow-x:hidden;
+            font-family:'Inter';
+        
         @media screen and (max-width:767px){
              background-color:#EEE9DA;
         }
