@@ -29,7 +29,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p className="read-the-docs">
-        I'm in vite with React Typescript
+        I'm in vite with React Typescript and then This is the first time to ues vite
       </p>
 
     </>
