@@ -14,7 +14,7 @@ const PrimaryTheme = css`
       #345ff7 0%,
       #587dff 100%
     ); // use only at background property
-    --heroBg-color:#E7F5FE;
+    --heroBg-color: #e7f5fe;
 
     // font
     --base-font-family: "Inter";
@@ -31,6 +31,7 @@ const PrimaryTheme = css`
 `;
 
 const GlobalStyles = createGlobalStyle<{}>`
+
     ${PrimaryTheme}
     * {
         margin:0;
@@ -44,12 +45,13 @@ const GlobalStyles = createGlobalStyle<{}>`
         min-height:100vh;
         overflow-x:hidden;
         color:var(--quinary-color);
-        // media quary screen 
-        ${respondTo('xs')`background:var(--blue-color)`};
-        ${respondTo('sm')`background:var(--gunmetal-color)`};
-        ${respondTo('md')`background:var(--darkElectricBlue-color)`};
-        ${respondTo('l')`background:var(--borders-color)`};
-        ${respondTo('xl')`background:var(--linearBlue-color)`};
+
+        /** media query screen helper function */
+        ${respondTo("xs")`background:var(--blue-color)`}
+        ${respondTo("sm")`background:var(--gunmetal-color)`}
+        ${respondTo("md")`background:var(--darkElectricBlue-color)`}
+        ${respondTo("l")`background:var(--borders-color)`}
+        ${respondTo("xl")`background:var(--linearBlue-color)`}
     }
 `;
 
