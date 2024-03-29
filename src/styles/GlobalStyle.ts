@@ -48,6 +48,7 @@ const GlobalStyles = createGlobalStyle<{}>`
 
         /** media query screen helper function */
         ${respondTo("xs")`background:var(--blue-color)`}
+        ${respondTo("s")`background:var(--linearBuld-color)`}
         ${respondTo("sm")`background:var(--gunmetal-color)`}
         ${respondTo("md")`background:var(--darkElectricBlue-color)`}
         ${respondTo("l")`background:var(--borders-color)`}
