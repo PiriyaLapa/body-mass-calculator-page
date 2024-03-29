@@ -1,16 +1,15 @@
 import { Component, ReactNode } from "react";
+import { HeaderContent } from "../../apis/contentData";
+import { StyledHeaderSection } from "../../styles/Styles";
+import HeaderCard from "../../components/HeaderCard";
 
 export default class HeaderSection extends Component {
   render(): ReactNode {
+    const { header } = HeaderContent;
     return (
-      <div>
-        <h1>HeaderSection</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          recusandae omnis eos explicabo nobis facilis porro nisi quod!
-          Excepturi, libero!
-        </p>
-      </div>
+      <StyledHeaderSection>
+        <HeaderCard headerContent={header} />
+      </StyledHeaderSection>
     );
   }
 }

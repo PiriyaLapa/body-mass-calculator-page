@@ -21,10 +21,10 @@ const PrimaryTheme = css`
 
     // photography variable
     --font-size-heading-xl: 4rem; // 64px
-    --font-size-heading-l: 3rem;//48px
-    --font-size-heading-m:1.5rem ; // 24px
-    --font-size-heading-s:1.25rem ; // 20px
-    --font-size-body-m:1rem ; // 16px;
+    --font-size-heading-l: 3rem; //48px
+    --font-size-heading-m: 1.5rem; // 24px
+    --font-size-heading-s: 1.25rem; // 20px
+    --font-size-body-m: 1rem; // 16px;
     --font-size-body-m-bold: 1rem; // 16px bold
     --font-size-body-s: 0.875rem; //14px
   }
@@ -45,14 +45,13 @@ const GlobalStyles = createGlobalStyle<{}>`
         min-height:100vh;
         overflow-x:hidden;
         color:var(--quinary-color);
-
         /** media query screen helper function */
-        ${respondTo("xs")`background:var(--blue-color)`}
-        ${respondTo("s")`background:var(--linearBuld-color)`}
-        ${respondTo("sm")`background:var(--gunmetal-color)`}
-        ${respondTo("md")`background:var(--darkElectricBlue-color)`}
-        ${respondTo("l")`background:var(--borders-color)`}
-        ${respondTo("xl")`background:var(--linearBlue-color)`}
+        ${respondTo("xs")``}
+        ${respondTo("s")``}
+        ${respondTo("sm")``}
+        ${respondTo("md")``}
+        ${respondTo("l")``}
+        ${respondTo("xl")``}
     }
 `;
 

@@ -1,10 +1,56 @@
-export const HeaderContent = {
+interface MainCard {
+  title: string;
+  content: string;
+}
+
+interface SubCard {
+  id: number;
+  title: string;
+  content: string;
+}
+
+interface FooterMainCard {
+  title: string;
+  content: string;
+}
+
+interface FooterSubCard {
+  id: number;
+  title: string;
+  content: string;
+}
+
+interface FooterContent {
+  maincard: FooterMainCard;
+  subcard: FooterSubCard[];
+}
+
+interface CardContent {
+  maincard: MainCard;
+  subcard: SubCard[];
+  footercontent: FooterContent;
+}
+
+interface HeaderContent {
+  header: {
+    title: string;
+    content: string;
+  };
+  contentcal: {
+    title: string;
+    optionA: string;
+    optionB: string;
+  };
+  cardcontent: CardContent;
+}
+
+// Define the HeaderContent object
+export const HeaderContent: HeaderContent = {
   header: {
     title: "Body Mass Index Calculator",
     content:
       "Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.",
   },
-
   contentcal: {
     title: "Enter your details below",
     optionA: "metric",
@@ -36,11 +82,44 @@ export const HeaderContent = {
           "Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.",
       },
     ],
-    footercontent : {
-        maincard: {
-            title:"Limitations of BMI",
-            content:"Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use."
-        }
-    }
+    footercontent: {
+      maincard: {
+        title: "Limitations of BMI",
+        content:
+          "Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.",
+      },
+      subcard: [
+        {
+          id: 0,
+          title: "Gender",
+          content:
+            "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.",
+        },
+        {
+          id: 1,
+          title: "Age",
+          content:
+            "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.",
+        },
+        {
+          id: 2,
+          title: "Muscle",
+          content:
+            "BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.",
+        },
+        {
+          id: 3,
+          title: "Pregnancy",
+          content:
+            "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.",
+        },
+        {
+          id: 4,
+          title: "Race",
+          content:
+            "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.",
+        },
+      ],
+    },
   },
 };
