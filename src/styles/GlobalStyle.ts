@@ -46,12 +46,10 @@ const GlobalStyles = createGlobalStyle<{}>`
         overflow-x:hidden;
 
         /** media query screen helper function */
-        ${respondTo("xs")``}
-        ${respondTo("s")``}
-        ${respondTo("sm")``}
-        ${respondTo("md")``}
-        ${respondTo("l")``}
-        ${respondTo("xl")``}
+        ${respondTo("xs")`background-color:red`}
+        ${respondTo("s")`background-color:green`}
+        ${respondTo("sm")`background-color:yellow`}
+        ${respondTo("md")`background-color:blue`}
     }
 `;
 
