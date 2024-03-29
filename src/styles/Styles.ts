@@ -24,7 +24,7 @@ export const StyledHeaderCard = styled.div`
     letter-spacing: -0.05em;
     color:var(--gunmetal-color);
   }
-  
+
   p {
     font-size:var(--font-size-body-m);
     font-weigth:400;
