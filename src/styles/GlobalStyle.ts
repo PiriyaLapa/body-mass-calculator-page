@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle<{}>`
         width:100%;
         min-height:100vh;
         overflow-x:hidden;
-        color:var(--quinary-color);
+
         /** media query screen helper function */
         ${respondTo("xs")``}
         ${respondTo("s")``}

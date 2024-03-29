@@ -33,6 +33,11 @@ export const StyledHeaderCard = styled.div`
     color:var(--darkElectricBlue-color);
   }
   `}
-
-  ${respondTo("s")`background:red;`}
+  ${respondTo("s")`
+  background-color:black; color:#ffff;
+`}
+${respondTo("sm")`
+  background-color:green;
+   color:yellow;
+`}
 `;

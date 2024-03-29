@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 // Define breakpoings
 const breakpoints = {
-  xs: 357 /** Very Extra Small */,
+  xs: 375 /** Very Extra Small */,
   s: 567 /** Extra Small */,
   sm: 768 /** Small */,
   md: 992 /** Medium */,
