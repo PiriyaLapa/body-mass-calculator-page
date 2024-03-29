@@ -21,12 +21,12 @@ const PrimaryTheme = css`
 
     // photography variable
     --font-size-heading-xl: 4rem; // 64px
-    --font-size-heading-l: ; //48px
-    --font-size-heading-m: ; // 24px
-    --font-size-heading-s: ; // 20px
-    --font-size-body-m: ; // 16px;
-    --font-size-body-m-bold: ; // 16px bold
-    --font-size-body-s: ; //14px
+    --font-size-heading-l: 3rem;//48px
+    --font-size-heading-m:1.5rem ; // 24px
+    --font-size-heading-s:1.25rem ; // 20px
+    --font-size-body-m:1rem ; // 16px;
+    --font-size-body-m-bold: 1rem; // 16px bold
+    --font-size-body-s: 0.875rem; //14px
   }
 `;
 
