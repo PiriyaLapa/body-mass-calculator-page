@@ -13,7 +13,7 @@ export default class HeaderCard extends Component<HeaderCardProps> {
     const { headerContent } = this.props;
     return (
       <StyledHeaderCard>
-        <span>{headerContent.title}</span>
+        <h1>{headerContent.title}</h1>
         <p>{headerContent.content}</p>
       </StyledHeaderCard>
     );
