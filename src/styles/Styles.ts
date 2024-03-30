@@ -2,28 +2,26 @@ import styled from "styled-components";
 // import { respondTo } from "../helper/MediaQueryHelper";
 export const StyledHeaderSection = styled.section``;
 export const StyledHeaderCard = styled.div`
-  @media screen and (max-width: 767px) {
-    width:100vw;
-    height:auto;
-    background-color:red;
-  }
+         width:375px;
+         height:auto;
+         margin: 0 auto;
+         @media screen and (max-width:767px){
+          background-color:green;
+         }
+         @media screen and (min-width:768px) and (max-width:1023px){
+            background-color:yellow;
+        }
 
-  // Tablet
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
-  }
+        // Labtop
+        @media screen and (min-width:1024px) and (max-width:1439px){
+            background-color:blue;
+        }
 
-  // Labtop
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
-  }
-
-  // Desktop
-  @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
-  }
-  @media screen and (min-width: 1920px) {
-    /* background-color:#CADEFC; */
-  }
+        // Desktop
+        @media screen and (min-width:1440px){
+              background-color:pink;
+        }
+        @media screen and (min-width:1920px){
+              background-color:#CADEFC;
+        }
 `;
