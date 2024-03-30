@@ -3,6 +3,7 @@ import HeaderSection from "./sections/HeaderSection";
 import { StyledLandingPage } from "../styles/Styles";
 import { HeaderContent } from "../apis/contentData";
 import { LandingPageState } from "../interface/interface";
+import MainSection from "./sections/MainSection";
 
 export default class LandingPage extends Component<{}, LandingPageState> {
   constructor(props: {}) {
@@ -15,6 +16,7 @@ export default class LandingPage extends Component<{}, LandingPageState> {
     return (
       <StyledLandingPage>
         <HeaderSection dataApis={HeaderContent} />
+        <MainSection dataApis={HeaderContent} />        
       </StyledLandingPage>
     );
   }

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { respondToMax } from "../helper/MediaQueryHelper";
+
 export const StyledHeaderSection = styled.section``;
+export const StyledHeroImg= styled.img``;
 export const StyledLandingPage = styled.div``;
 export const StyledMainSection = styled.section``;
 export const StyledBmiForm = styled.form``;
