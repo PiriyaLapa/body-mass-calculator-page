@@ -25,7 +25,16 @@ class MediaQueryHelper {
       }
     `;
   }
+
+  respondToMax(key: Breakpoints) {
+    return (literals: TemplateStringsArray, ...placeholder: any[]) => css`
+      @media (max-width: ${this.breakpoints[key]}px) {
+        ${css(literals, ...placeholder)}
+      }
+    `;
+  }
 }
 
 const mediaQueryHelper = new MediaQueryHelper(breakpoints);
 export const respondTo = mediaQueryHelper.respondTo.bind(mediaQueryHelper);
+export const respondToMax = mediaQueryHelper.respondToMax.bind(mediaQueryHelper);

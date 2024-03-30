@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from "styled-components";
+import { respondTo,respondToMax } from "../helper/MediaQueryHelper";
 
 const PrimaryTheme = css`
   :root {
@@ -42,28 +43,16 @@ const GlobalStyles = createGlobalStyle<{}>`
     body {
         width:100%;
         min-height:100vh;
-        overflow-x:hidden;
-         @media screen and (max-width:767px){
-          background-color:green;
-         }
-         @media screen and (min-width:768px) and (max-width:1023px){
-              background-color:#BDCDD6;
-            /* padding: 3% 5%; */
-        }
+        /** 
+        ${respondToMax('xs')`background:red`};
+        ${respondTo('s')`background:var(--gunmetal-color)`};
+        ${respondTo('sm')`background:var(--borders-color)`};
+        ${respondTo('md')`background:var(--linearBlue-color)`};
+        ${respondTo('l')`background:var(--gradientBlue-color)`};
+        ${respondTo('xl')`background:var(--gunmetal-color)`};
 
-        // Labtop
-        @media screen and (min-width:1024px) and (max-width:1439px){
-              /* background-color:#93BFCF; */
-        }
 
-        // Desktop
-        @media screen and (min-width:1440px){
-              background-color:#6096B4;
-        }
-        @media screen and (min-width:1920px){
-              background-color:#CADEFC;
-        }
-
+         */
     }
 `;
 

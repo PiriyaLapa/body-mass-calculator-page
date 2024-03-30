@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
-import { StyledHeaderCard } from "../styles/Styles";
+import { StyledHeaderCard } from "../../styles/Styles";
+import Logo from "../Icons/Logo";
 
 interface HeaderCardProps {
   headerContent: {
@@ -13,6 +14,7 @@ export default class HeaderCard extends Component<HeaderCardProps> {
     const { headerContent } = this.props;
     return (
       <StyledHeaderCard>
+        <Logo />
         <h1>{headerContent.title}</h1>
         <p>{headerContent.content}</p>
       </StyledHeaderCard>
