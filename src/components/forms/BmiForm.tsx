@@ -1,13 +1,20 @@
 import { Component, ReactNode } from "react";
 import { StyledBmiForm } from "../../styles/Styles";
-import { HeaderContent } from "../../apis/contentData";
-import { BmiFromProps } from "../../apis/interface/interface";
 import ResultCard from "../Cards/ResultCard";
 
-export default class BmiForm extends Component<BmiFromProps> {
+interface ContentCal {
+  title: string;
+  optionA: string;
+  optionB: string;
+  height: string;
+  weight: string;
+}
+interface BmiFormProps {
+  contentCal: ContentCal;
+}
+export default class BmiForm extends Component<BmiFormProps> {
   render(): ReactNode {
-    const { title, optionA, optionB, height, weight } =
-      HeaderContent.contentcal;
+    const { title, optionA, optionB, height, weight } = this.props.contentCal;
     return (
       <StyledBmiForm>
         <h1>{title}</h1>

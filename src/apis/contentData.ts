@@ -1,10 +1,10 @@
 import heroImg from "../assets/images/image-man-eating.webp";
+
 interface MainCard {
   img: string;
   title: string;
   content: string;
 }
-
 interface SubCard {
   id: number;
   title: string;

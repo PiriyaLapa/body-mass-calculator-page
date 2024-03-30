@@ -1,20 +1,20 @@
 import { Component, ReactNode } from "react";
-import { HeaderContent } from "../../apis/contentData";
 import { StyledHeaderSection } from "../../styles/Styles";
 import HeaderCard from "../../components/Cards/HeaderCard";
-import BimForm from "../../components/forms/BmiForm";
+import BmiForm from "../../components/forms/BmiForm";
+import { HeaderContent } from "../../apis/contentData"; // Assuming ContentCal is exported from contentData
 
 interface HeaderSectionProps {
-  dataApis:HeaderContent
+  dataApis: HeaderContent;
 }
 
 export default class HeaderSection extends Component<HeaderSectionProps> {
   render(): ReactNode {
-      const {header} = this.props.dataApis;
+    const { header, contentcal } = this.props.dataApis;
     return (
       <StyledHeaderSection>
         <HeaderCard headerContent={header} />
-        <BimForm />
+        <BmiForm contentCal={contentcal} />
       </StyledHeaderSection>
     );
   }
