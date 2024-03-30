@@ -1,39 +1,29 @@
 import styled from "styled-components";
-import { respondTo } from "../helper/MediaQueryHelper";
+// import { respondTo } from "../helper/MediaQueryHelper";
 export const StyledHeaderSection = styled.section``;
 export const StyledHeaderCard = styled.div`
-  ${respondTo("xs")`
-  margin:0 auto;
-  max-width:375px;
-  max-height:640px;
-  padding:1.7rem;
-  text-align:center;
-  background:var(--gradient-color);
-  width: 100vw;
-  height: auto;
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-  border-radius:0px 0px 35px 35px; 
-
-  h1 {
-    font-size:var(--font-size-heading-l);
-    font-weight:600;
-    line-height:100%;
-    text-align:center;
-    letter-spacing: -0.05em;
-    color:var(--gunmetal-color);
+  @media screen and (max-width: 767px) {
+    width:100vw;
+    height:auto;
+    background-color:red;
   }
 
-  p {
-    font-size:var(--font-size-body-m);
-    font-weigth:400;
-    font-style:normal;
-    line-height:150%; 
-    color:var(--darkElectricBlue-color);
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
   }
-  `}
-  ${respondTo("s")`background-color:var(--blue-color);`}
-  ${respondTo("sm")`background-color:var(--gunmetal-color);`}
-  ${respondTo("md")`background-color:var(--borders-color);`}
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
 `;
