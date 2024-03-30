@@ -1,4 +1,6 @@
+import heroImg from "../assets/images/image-man-eating.webp";
 interface MainCard {
+  img: string;
   title: string;
   content: string;
 }
@@ -31,7 +33,7 @@ interface CardContent {
   footercontent: FooterContent;
 }
 
-interface HeaderContent {
+export interface HeaderContent {
   header: {
     title: string;
     content: string;
@@ -40,6 +42,8 @@ interface HeaderContent {
     title: string;
     optionA: string;
     optionB: string;
+    height: string;
+    weight: string;
   };
   cardcontent: CardContent;
 }
@@ -47,7 +51,7 @@ interface HeaderContent {
 // Define the HeaderContent object
 export const HeaderContent: HeaderContent = {
   header: {
-    title: "Body Mass Index Calculator",
+    title: "Body Mass Index Calculator By Benz",
     content:
       "Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.",
   },
@@ -55,9 +59,12 @@ export const HeaderContent: HeaderContent = {
     title: "Enter your details below",
     optionA: "metric",
     optionB: "imperial",
+    height: "height",
+    weight: "weight",
   },
   cardcontent: {
     maincard: {
+      img: heroImg,
       title: "What your BMI result means",
       content:
         "A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.",

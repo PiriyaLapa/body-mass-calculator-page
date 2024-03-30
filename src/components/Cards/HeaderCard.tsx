@@ -11,12 +11,12 @@ interface HeaderCardProps {
 
 export default class HeaderCard extends Component<HeaderCardProps> {
   render(): ReactNode {
-    const { headerContent } = this.props;
+    const { title,content} = this.props.headerContent;
     return (
       <StyledHeaderCard>
         <Logo />
-        <h1>{headerContent.title}</h1>
-        <p>{headerContent.content}</p>
+        <h1>{title}</h1>
+        <p>{content}</p>
       </StyledHeaderCard>
     );
   }
