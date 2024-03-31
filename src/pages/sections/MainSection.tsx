@@ -6,6 +6,7 @@ import {
 } from "../../styles/Styles";
 import { HeaderContent } from "../../apis/contentData";
 import HeroImg from "../../components/Images/HeroImg";
+import MainSubCard from "../../components/Cards/MainSubCard";
 
 interface MainCardProps {
   dataApis: HeaderContent;
@@ -13,6 +14,9 @@ interface MainCardProps {
 export default class MainSection extends Component<MainCardProps> {
   render(): ReactNode {
     const { img, title, content } = this.props.dataApis.cardcontent.maincard;
+    const {subContent} = this.props.dataApis.cardcontent;
+
+
     return (
       <StyledMainSection>
         <StyledBoxImg>
@@ -22,6 +26,7 @@ export default class MainSection extends Component<MainCardProps> {
           <h1>{title}</h1>
           <p>{content}</p>
         </StyledMainContentBox>
+        <MainSubCard />
       </StyledMainSection>
     );
   }
