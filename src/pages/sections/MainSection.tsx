@@ -1,4 +1,4 @@
-import { Component, ReactNode } from "react";
+import { Component } from "react";
 import {
   StyledBoxImg,
   StyledMainContentBox,
@@ -6,16 +6,34 @@ import {
 } from "../../styles/Styles";
 import { HeaderContent, SubCard } from "../../apis/contentData";
 import HeroImg from "../../components/Images/HeroImg";
+import SubMainCard from "../../components/Cards/SubMainCard";
 
 interface MainCardProps {
   dataApis: HeaderContent;
 }
-export default class MainSection extends Component<MainCardProps> {
-  render(): ReactNode {
-    const { img, title, content } = this.props.dataApis.cardcontent.maincard;
-    const {subcard} = this.props.dataApis.cardcontent;
 
-
+interface MainCardState {
+  mainCardContent: {
+    img: string;
+    title: string;
+    content: string;
+  };
+  subCardContent: SubCard[];
+}
+export default class MainSection extends Component<
+  MainCardProps,
+  MainCardState
+> {
+  constructor(props: MainCardProps) {
+    super(props);
+    this.state = {
+      mainCardContent: this.props.dataApis.cardcontent.maincard,
+      subCardContent: this.props.dataApis.cardcontent.subcard,
+    };
+  }
+  render() {
+    const {img,title,content} = this.state.mainCardContent; 
+    const {subCardContent} = this.state;
     return (
       <StyledMainSection>
         <StyledBoxImg>
@@ -25,7 +43,7 @@ export default class MainSection extends Component<MainCardProps> {
           <h1>{title}</h1>
           <p>{content}</p>
           <h1>{title}</h1>
-          {subcard.map((sub:SubCard) => (<div key={sub.id}><h1>{sub.title}</h1><p>{sub.content}</p></div>))}
+          <SubMainCard subMainCardContent={subCardContent} />
         </StyledMainContentBox>
       </StyledMainSection>
     );
