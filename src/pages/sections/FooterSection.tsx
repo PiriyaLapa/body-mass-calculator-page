@@ -1,6 +1,7 @@
 import { Component, ReactNode } from "react";
 import { SubCard, HeaderContent } from "../../apis/contentData";
 import FooterCard from "../../components/Cards/FooterCard";
+import { StyledFooterMainCard, StyledFooterSection } from "../../styles/Styles";
 
 interface FooterProps {
   dataApis: HeaderContent;
@@ -20,13 +21,16 @@ export default class FooterSection extends Component<FooterProps, FooterState> {
     };
   }
   render(): ReactNode {
-    const {title,content} = this.props.dataApis.cardcontent.footercontent.maincard;
-    return <div>
-          <div>
-            <h1>{title}</h1>
-            <p>{content}</p>
-          </div>
-          <FooterCard footerContent={this.state.subcard} />      
-    </div>;
+    const { title, content } =
+      this.props.dataApis.cardcontent.footercontent.maincard;
+    return (
+      <StyledFooterSection>
+        <StyledFooterMainCard>
+          <h1>{title}</h1>
+          <p>{content}</p>
+        </StyledFooterMainCard>
+        <FooterCard footerContent={this.state.subcard} />
+      </StyledFooterSection>
+    );
   }
 }

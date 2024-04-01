@@ -13,6 +13,7 @@ export const StyledImgHero= styled.img``;
 export  const StyledSubMainCard = styled.div``;
 export const StyledFooterSection = styled.div``;
 export const StyledFooterContent= styled.div``;
+export const StyledFooterMainCard = styled.div``;
 export const styledFooterCard = styled.div``;
 export const StyledHeaderCard = styled.div`
   ${respondToMax("xs")`
