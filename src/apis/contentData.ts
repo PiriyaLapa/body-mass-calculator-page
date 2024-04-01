@@ -5,7 +5,7 @@ interface MainCard {
   title: string;
   content: string;
 }
-interface SubCard {
+export interface SubCard {
   id: number;
   title: string;
   content: string;

@@ -4,9 +4,8 @@ import {
   StyledMainContentBox,
   StyledMainSection,
 } from "../../styles/Styles";
-import { HeaderContent } from "../../apis/contentData";
+import { HeaderContent, SubCard } from "../../apis/contentData";
 import HeroImg from "../../components/Images/HeroImg";
-import MainSubCard from "../../components/Cards/MainSubCard";
 
 interface MainCardProps {
   dataApis: HeaderContent;
@@ -14,7 +13,7 @@ interface MainCardProps {
 export default class MainSection extends Component<MainCardProps> {
   render(): ReactNode {
     const { img, title, content } = this.props.dataApis.cardcontent.maincard;
-    const {subContent} = this.props.dataApis.cardcontent;
+    const {subcard} = this.props.dataApis.cardcontent;
 
 
     return (
@@ -25,8 +24,9 @@ export default class MainSection extends Component<MainCardProps> {
         <StyledMainContentBox>
           <h1>{title}</h1>
           <p>{content}</p>
+          <h1>{title}</h1>
+          {subcard.map((sub:SubCard) => (<div key={sub.id}><h1>{sub.title}</h1><p>{sub.content}</p></div>))}
         </StyledMainContentBox>
-        <MainSubCard />
       </StyledMainSection>
     );
   }
