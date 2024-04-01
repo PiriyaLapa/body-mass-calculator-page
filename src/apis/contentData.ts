@@ -22,7 +22,7 @@ interface FooterSubCard {
   content: string;
 }
 
-interface FooterContent {
+export interface FooterContent {
   maincard: FooterMainCard;
   subcard: FooterSubCard[];
 }
