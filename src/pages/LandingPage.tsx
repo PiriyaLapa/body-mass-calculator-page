@@ -40,8 +40,8 @@ export default class LandingPage extends Component<{}, LandingPageState> {
     return (
       <StyledLandingPage>
         <HeaderSection dataApis={HeaderContent} />
-        <MainSection dataApis={HeaderContent} />
-        <FooterSection dataApis={HeaderContent} />
+        {/* <MainSection dataApis={HeaderContent} />
+        <FooterSection dataApis={HeaderContent} /> */}
         <ScreenSizeDetect screenNow={screenNow} windowWidth={windowWidth}  windowHeight={windowHeight}/>
       </StyledLandingPage>
     );
