@@ -28,16 +28,18 @@ export const StyledHeaderCard = styled.div`
     background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
     max-height:640px;
     display:grid;
-    padding:1rem;
+    padding:1.25rem;
     grid-gap:1.5rem;
     width:100%; 
     height:auto;
     :nth-child(1){margin-top:var(--font-size-body-m); margin:0 auto;};
     :nth-child(2){
-      font-weight:600;
+      font-weight:700;
       line-height:110%;
       font-size:var(--font-size-heading-l); 
       display:block;
+      color:var(--gunmetal-color);
+      letter-spacing:0.05em;
     }
     :nth-child(3){
       font-size:var(--font-size-body-m); 
