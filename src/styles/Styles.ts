@@ -23,7 +23,7 @@ export const StyledHeaderCard = styled.div`
   font-size: "Inter";
   font-size: normal;
   text-align: center;
-  ${respondToMax("xs")`
+  ${respondToMax("sm")`
     width:100%; 
     height:auto;
     background:var(--gradient-color);
