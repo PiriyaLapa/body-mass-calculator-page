@@ -7,6 +7,7 @@ import {
 import { HeaderContent, SubCard } from "../../apis/contentData";
 import HeroImg from "../../components/Images/HeroImg";
 import SubMainCard from "../../components/Cards/SubMainCard";
+import { IconColectionsMain } from "../../components/Icons/IconColections";
 
 interface MainCardProps {
   dataApis: HeaderContent;
@@ -45,7 +46,8 @@ export default class MainSection extends Component<
           <h1>{title}</h1>
           <SubMainCard subMainCardContent={subCardContent} />
         </StyledMainContentBox>
-      </StyledMainSection>
+          <IconColectionsMain />
+        </StyledMainSection>
     );
   }
 }
