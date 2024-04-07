@@ -50,8 +50,6 @@ const GlobalStyles = createGlobalStyle<{}>`
         ${respondTo('md')`background:var(--linearBlue-color)`};
         ${respondTo('l')`background:var(--gradientBlue-color)`};
         ${respondTo('xl')`background:var(--gunmetal-color)`};
-
-
          */
     }
 `;
