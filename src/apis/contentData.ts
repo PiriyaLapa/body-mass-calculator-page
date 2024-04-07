@@ -51,7 +51,7 @@ export interface HeaderContent {
 // Define the HeaderContent object
 export const HeaderContent: HeaderContent = {
   header: {
-    title: "Body Mass Index Calculator By Benz",
+    title: "Body Mass Index Calculator",
     content:
       "Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.",
   },

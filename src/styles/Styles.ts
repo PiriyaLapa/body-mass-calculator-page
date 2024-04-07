@@ -23,11 +23,16 @@ export const StyledHeaderCard = styled.div`
   font-size: "Inter";
   font-size: normal;
   text-align: center;
-  ${respondToMax("md")`
+  ${respondToMax("xs")`
+    border-radius: 0px 0px 35px 35px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    max-height:640px;
+    display:grid;
+    padding:1rem;
+    grid-gap:1.5rem;
     width:100%; 
     height:auto;
-    background:var(--gradient-color);
-    :nth-child(1){margin-top:var(--font-size-body-m)};
+    :nth-child(1){margin-top:var(--font-size-body-m); margin:0 auto;};
     :nth-child(2){
       font-weight:600;
       line-height:110%;
