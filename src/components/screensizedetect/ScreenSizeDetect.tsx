@@ -1,6 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledScreenSizeDetect } from "../../styles/Styles";
-import { NumberFormatter } from "../../helper/detectScreenSize";
+import { NumberFormatter } from "../../helper/detectScreenSizeClass";
 
 interface ScreenSizeDetectProps {        
   screenNow: string;
@@ -10,7 +10,7 @@ interface ScreenSizeDetectProps {
 
 export default class ScreenSizeDetect extends Component<ScreenSizeDetectProps> {
   render(): ReactNode {
-    const {  windowWidth, windowHeight } = this.props;
+    const {  screenNow,windowWidth, windowHeight } = this.props;
     const formatter = new NumberFormatter();    
     const formatterWidth = formatter.formatNumber(windowWidth);
     const formatterHeight = formatter.formatNumber(windowHeight);

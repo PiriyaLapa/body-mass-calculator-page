@@ -1,4 +1,4 @@
-class ScreenSizeDetect {
+class ScreenSizeDetectClass {
   windowWidth: number;
   constructor(windowWidth: number) {
     this.windowWidth = windowWidth;
@@ -23,4 +23,4 @@ class NumberFormatter {
   return num.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 }
-export { ScreenSizeDetect, NumberFormatter };
+export { ScreenSizeDetectClass, NumberFormatter };
