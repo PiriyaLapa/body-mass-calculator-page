@@ -17,3 +17,19 @@ export const StyledFooterMainCard = styled.div``;
 export const styledFooterCard = styled.div``;
 export const StyledHeaderCard = styled.div``;
 /** Please code Icon compoennt below */
+
+/** MainIcon */
+export const StyledHealhyIcon = styled.div``;
+export const StyledRegularIcon = styled.div``;
+export const StyledAdequateIcon = styled.div``; 
+
+/** FooterIcon */
+
+export const StyledGenderIcon = styled.div``;
+export const StyledAgeIcon = styled.div``; 
+export const StyledMuscleIcon = styled.div``;
+export const StyledPregnancyIcon = styled.div``;
+export const StyledRaceIcon = styled.div``;
+
+export const StyledIconCollectionMain = styled.div``;
+export const StyledIconCollectionFooter= styled.div``;

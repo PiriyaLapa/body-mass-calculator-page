@@ -2,6 +2,7 @@ import { Component, ReactNode } from "react";
 import { SubCard, HeaderContent } from "../../apis/contentData";
 import FooterCard from "../../components/Cards/FooterCard";
 import { StyledFooterMainCard, StyledFooterSection } from "../../styles/Styles";
+import { IConCollectionsFooter } from "../../components/Icons/IconColections";
 
 interface FooterProps {
   dataApis: HeaderContent;
@@ -30,6 +31,7 @@ export default class FooterSection extends Component<FooterProps, FooterState> {
           <p>{content}</p>
         </StyledFooterMainCard>
         <FooterCard footerContent={this.state.subcard} />
+        <IConCollectionsFooter />
       </StyledFooterSection>
     );
   }
