@@ -9,7 +9,17 @@ export const StyledLandingPage = styled.div`
   grid-template-rows: auto auto auto;
 `;
 export const StyledMainSection = styled.section``;
-export const StyledBmiForm = styled.form``;
+export const StyledBmiForm = styled.form`
+  border-radius: 16px;
+  background-color:#ffff;
+  ${respondToMax("xs")`
+    
+  `}
+
+  ${respondTo("xs")`
+
+  `}
+`;
 export const StyledResultCard = styled.div``;
 export const StyledBoxImg = styled.div``;
 export const StyledMainContentBox = styled.div``;
