@@ -11,7 +11,7 @@ export const StyledLandingPage = styled.div`
 export const StyledMainSection = styled.section``;
 export const StyledBmiForm = styled.form`
   border-radius: 16px;
-  background-color:#ffff;
+  background-color: #ffff;
   ${respondToMax("xs")`
     
   `}
@@ -83,7 +83,35 @@ export const StyledHeaderCard = styled.div`
       line-height:150%;
       color:var(--darkElectricBlue-color);
     }
+  `}
 
+  ${respondTo("sm")`
+    border-radius: 0px 0px 35px 35px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    max-height:640px;
+    display:grid;
+    padding:1.25rem;
+    grid-gap:1.5rem;
+    width:100%; 
+    height:auto;
+    :nth-child(1){margin-top:var(--font-size-body-m); margin:0 auto;};
+    :nth-child(2){
+      width:58%;
+      font-weight:600;
+      line-height:110%;
+      font-size:var(--font-size-heading-l); 
+      margin: 0 auto;
+      text-align:center;
+      color:var(--gunmetal-color);
+      letter-spacing:0.05em;
+    }
+    :nth-child(3){
+      font-size:var(--font-size-body-m); 
+      font-weigth:400;
+      line-height:150%;
+      color:var(--darkElectricBlue-color);
+      padding: 0 3%;
+    }
   `}
 `;
 /** Please code Icon compoennt below */
