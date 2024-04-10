@@ -4,8 +4,8 @@ import { css } from "styled-components";
 const breakpoints = {
   xs: 375 /** Very Extra Small */,
   s: 567 /** Extra Small */,
-  sm: 768 /** Small */,
-  md: 992 /** Medium */,
+  sm: 768 /** Small tablap */,
+  md: 992 /** Medium laptop*/,
   l: 1200 /** Large */,
   xl: 1600 /** Extra Large */,
 };
