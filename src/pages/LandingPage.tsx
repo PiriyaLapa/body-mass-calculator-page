@@ -47,3 +47,4 @@ export default class LandingPage extends Component<{}, LandingPageState> {
     );
   }
 }
+

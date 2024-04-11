@@ -19,6 +19,7 @@ export const StyledBmiForm = styled.form`
   ${respondTo("xs")`
 
   `}
+
 `;
 export const StyledResultCard = styled.div``;
 export const StyledBoxImg = styled.div``;
@@ -33,9 +34,9 @@ export const StyledHeaderCard = styled.div`
   font-size: "Inter";
   font-size: normal;
   text-align: center;
-  ${respondToMax("xs")`
     border-radius: 0px 0px 35px 35px;
     background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+  ${respondToMax("xs")`
     max-height:640px;
     display:grid;
     padding:1.25rem;
@@ -60,8 +61,6 @@ export const StyledHeaderCard = styled.div`
   `}
 
   ${respondTo("xs")`
-    border-radius: 0px 0px 35px 35px;
-    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
     max-height:640px;
     display:grid;
     padding:1.25rem;
@@ -86,8 +85,6 @@ export const StyledHeaderCard = styled.div`
   `}
 
   ${respondTo("sm")`
-    border-radius: 0px 0px 35px 35px;
-    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
     max-height:640px;
     display:grid;
     padding:1.25rem;
@@ -112,6 +109,36 @@ export const StyledHeaderCard = styled.div`
       color:var(--darkElectricBlue-color);
       padding: 0 3%;
     }
+  `}
+
+  ${respondTo("l")`
+    max-width:987px;
+    max-height:737px;
+    width:100%;
+    height:100%;
+    display:grid;
+    padding:1.25rem;
+    grid-gap:1.5rem;
+    height:auto;
+    :nth-child(1){margin-top:var(--font-size-heading-xl); float:left; };
+    :nth-child(2){
+      width:58%;
+      font-weight:600;
+      line-height:110%;
+      font-size:var(--font-size-heading-l); 
+      margin: 0 auto;
+      text-align:center;
+      color:var(--gunmetal-color);
+      letter-spacing:0.05em;
+    }
+    :nth-child(3){
+      font-size:var(--font-size-body-m); 
+      font-weigth:400;
+      line-height:150%;
+      color:var(--darkElectricBlue-color);
+      padding: 0 3%;
+    }
+
   `}
 `;
 /** Please code Icon compoennt below */

@@ -16,18 +16,24 @@ export default class BmiForm extends Component<BmiFormProps> {
   render(): ReactNode {
     const { title, optionA, optionB, height, weight } = this.props.contentCal;
     return (
-      <StyledBmiForm>
+      <StyledBmiForm id="">
         <h1>{title}</h1>
-        <input type="radio" name="Metric" id="" />
-        <label htmlFor="">{optionA}</label>
-        <input type="radio" name="Metric" id="" />
-        <label htmlFor="">{optionB}</label>
-        <label htmlFor="">{height}</label>
-        <input type="text" />
-        <input type="text" />
-        <label htmlFor="">{weight}</label>
-        <input type="text" />
-        <input type="text" />
+        <div>
+          <input type="radio" name="metric" id="metricA" />
+          <label htmlFor="metricA">{optionA}</label>
+        </div>
+        <div>
+          <input type="radio" name="metric" id="metricB" />
+          <label htmlFor="metricB">{optionB}</label>
+        </div>
+        <div>
+          <label htmlFor="height">{height}</label>
+          <input type="text" id="height" />
+        </div>
+        <div>
+          <label htmlFor="weight">{weight}</label>
+          <input type="text" id="weight" />
+        </div>
         <ResultCard />
       </StyledBmiForm>
     );
