@@ -19,7 +19,6 @@ const PrimaryTheme = css`
     // font
     --base-font-family: "Inter";
 
-    
     // photography variable
     --font-size-heading-xl: 4rem; // 64px
     --font-size-heading-l: 3rem; //48px

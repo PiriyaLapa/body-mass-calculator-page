@@ -111,16 +111,18 @@ export const StyledHeaderCard = styled.div`
     }
   `}
 
-  ${respondTo("l")`
+   /**  laptop size */
+  ${respondTo("md")`
     max-width:987px;
     max-height:737px;
-    width:100%;
+    width:70%;
     height:100%;
-    display:grid;
     padding:1.25rem;
     grid-gap:1.5rem;
     height:auto;
-    :nth-child(1){margin-top:var(--font-size-heading-xl); float:left; };
+    :nth-child(1){
+      /** */
+    };
     :nth-child(2){
       width:58%;
       font-weight:600;
@@ -144,6 +146,13 @@ export const StyledHeaderCard = styled.div`
 /** Please code Icon compoennt below */
 
 /** MainIcon */
+export const StyledMainLogo = styled.div`
+    ${respondTo("md")`
+      border:1px solid red;
+
+      
+    `};
+`;
 export const StyledHealhyIcon = styled.div``;
 export const StyledRegularIcon = styled.div``;
 export const StyledAdequateIcon = styled.div``;
