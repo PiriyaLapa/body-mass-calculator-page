@@ -19,7 +19,6 @@ export const StyledBmiForm = styled.form`
   ${respondTo("xs")`
 
   `}
-
 `;
 export const StyledResultCard = styled.div``;
 export const StyledBoxImg = styled.div``;
@@ -33,9 +32,13 @@ export const styledFooterCard = styled.div``;
 export const StyledHeaderCard = styled.div`
   font-size: "Inter";
   font-size: normal;
-  text-align: center;
-    border-radius: 0px 0px 35px 35px;
-    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+  // text-align: center;
+  border-radius: 0px 0px 35px 35px;
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
   ${respondToMax("xs")`
     max-height:640px;
     display:grid;
@@ -117,21 +120,24 @@ export const StyledHeaderCard = styled.div`
     max-height:737px;
     width:70%;
     height:100%;
-    padding:1.25rem;
-    grid-gap:1.5rem;
+    // padding:1.25rem;
+    padding:3rem 5rem 8rem 5rem;
     height:auto;
+    display:grid;
     :nth-child(1){
-      /** */
+          //
     };
+
     :nth-child(2){
-      width:58%;
+      width:65%;
       font-weight:600;
       line-height:110%;
       font-size:var(--font-size-heading-l); 
-      margin: 0 auto;
-      text-align:center;
+      text-align:left;
       color:var(--gunmetal-color);
       letter-spacing:0.05em;
+      position:relative;
+      right:15%;
     }
     :nth-child(3){
       font-size:var(--font-size-body-m); 
@@ -147,11 +153,11 @@ export const StyledHeaderCard = styled.div`
 
 /** MainIcon */
 export const StyledMainLogo = styled.div`
-    ${respondTo("md")`
-      border:1px solid red;
-
-      
+  ${respondTo("md")`
+      position:relative;
+      right:44%;
     `};
+    
 `;
 export const StyledHealhyIcon = styled.div``;
 export const StyledRegularIcon = styled.div``;
