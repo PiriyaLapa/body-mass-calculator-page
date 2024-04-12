@@ -1,0 +1,21 @@
+import { Component, ReactNode } from "react";
+import { StyledImperialInput } from "../../styles/Styles";
+
+export default class ImperialInput extends Component {
+  render(): ReactNode {
+    return (
+      <StyledImperialInput>
+        <div>
+          <label htmlFor="Imperial">Height</label>
+          <input type="text" name="ft" id="ft" />
+          <input type="text" name="in" id="in" />
+        </div>
+        <div>
+          <label htmlFor="Imperial">Weight</label>
+          <input type="text" name="st" id="st" />
+          <input type="text" name="lbs" id="lbs" />
+        </div>
+      </StyledImperialInput>
+    );
+  }
+}
