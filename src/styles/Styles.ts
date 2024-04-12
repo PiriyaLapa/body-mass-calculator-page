@@ -7,6 +7,9 @@ export const StyledLandingPage = styled.div`
   overflow-x: hidden;
   display: grid;
   grid-template-rows: auto auto auto;
+  ${respondTo("md")`
+    padding:3%;
+  `};
 `;
 export const StyledMainSection = styled.section``;
 export const StyledBmiForm = styled.form`
@@ -157,7 +160,6 @@ export const StyledMainLogo = styled.div`
       position:relative;
       right:44%;
     `};
-    
 `;
 export const StyledHealhyIcon = styled.div``;
 export const StyledRegularIcon = styled.div``;
