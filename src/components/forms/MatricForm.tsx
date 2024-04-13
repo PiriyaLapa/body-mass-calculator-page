@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledMarticFrom } from "../../styles/Styles";
+import ResultCard from "../Cards/ResultCard";
 
 export default class MatricForm extends Component {
   render(): ReactNode {
@@ -14,6 +15,7 @@ export default class MatricForm extends Component {
           <label htmlFor="">weight</label>
           <input type="text" name="weight" id="weight" />
         </div>
+        <ResultCard />
       </StyledMarticFrom>
     );
   }

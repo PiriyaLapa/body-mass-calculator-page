@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledImperialInput } from "../../styles/Styles";
+import ResultCard from "../Cards/ResultCard";
 
 export default class ImperialInput extends Component {
   render(): ReactNode {
@@ -16,6 +17,7 @@ export default class ImperialInput extends Component {
           <input type="text" name="st" id="st" />
           <input type="text" name="lbs" id="lbs" />
         </div>
+        <ResultCard />
       </StyledImperialInput>
     );
   }
