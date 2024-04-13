@@ -1,7 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledBmiForm } from "../../styles/Styles";
 import ResultCard from "../Cards/ResultCard";
-import ImperialInput from "./ImperialInput";
 import RadioOptions from "./RadioOptions";
 
 interface ContentCal {
@@ -21,7 +20,6 @@ export default class BmiForm extends Component<BmiFormProps> {
       <StyledBmiForm>
         <h1>{title}</h1>
         <RadioOptions {...{optionA,optionB}}/>
-        <ImperialInput />
         <ResultCard />
       </StyledBmiForm>
     );

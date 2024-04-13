@@ -1,5 +1,7 @@
 import { Component, ReactNode } from "react";
 import { StyledRadioOption } from "../../styles/Styles";
+import MatricForm from "./MatricForm";
+import ImperialInput from "./ImperialInput";
 
 interface RadioOptionsProps {
   optionA: string;
@@ -56,9 +58,9 @@ export default class RadioOptions extends Component<
           <label htmlFor="metricB">{optionB}</label>
         </div>
         {isOptionASelected !== null && isOptionASelected ? (
-          <h1>FormA</h1>
+          <MatricForm />
         ) : (
-          <h1>FormB</h1>
+          <ImperialInput />
         )}
       </StyledRadioOption>
     );

@@ -1,23 +1,20 @@
-// import {Component,ReactNode} from 'react';
+import { Component, ReactNode } from "react";
+import { StyledMarticFrom } from "../../styles/Styles";
 
-// export default class MarticForm extends Component{
-//     render():ReactNode{
-//         return(
-//             <StyledMatricForm>
-                
-//             </StyledMatricForm>
-//         )
-//     }
-// }
-/**
-    class BmiCalculator:
-        def matric(weight,height){
-            bmi = weight * (height ** 2); 
-            return bmi
-        }
-    bmicalmatric = BmiCalculator();
-    weight:68cm;
-    height:170cm;
-    bmiResult = bmicalmatric.martick(weight,height);
-    print("BMI : ", bmiResult);
- */
+export default class MatricForm extends Component {
+  render(): ReactNode {
+    return (
+      <StyledMarticFrom>
+        <h1>MatricFomr</h1>
+        <div>
+          <label htmlFor="">Height</label>
+          <input type="text" name="height" id="height" />
+        </div>
+        <div>
+          <label htmlFor="">weight</label>
+          <input type="text" name="weight" id="weight" />
+        </div>
+      </StyledMarticFrom>
+    );
+  }
+}
