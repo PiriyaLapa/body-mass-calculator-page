@@ -7,35 +7,59 @@ interface RadioOptionsProps {
 }
 
 interface RadioOptionsState {
-  selectedOption: string;
+  selectedOption: string | null;
+  isOptionASelected: boolean | null;
 }
-export default class RadioOptions extends Component<RadioOptionsProps, RadioOptionsState> {
+export default class RadioOptions extends Component<
+  RadioOptionsProps,
+  RadioOptionsState
+> {
   constructor(props: RadioOptionsProps) {
     super(props);
     this.state = {
-      selectedOption: props.optionA,
+      selectedOption: null,
+      isOptionASelected: null,
     };
   }
 
   handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    this.setState({
-      selectedOption: event.target.value,
-    });
+    const selectedOption = event.target.value;
+    const isOptionASelected = selectedOption === this.props.optionA;
+    this.setState({ selectedOption, isOptionASelected });
   };
 
   render(): ReactNode {
     const { optionA, optionB } = this.props;
-    const {selectedOption} = this.state;
+    const { selectedOption, isOptionASelected } = this.state;
     return (
       <StyledRadioOption>
         <div>
-          <input id="metricA" type="radio" name="metric" value={optionA} checked={selectedOption === optionA} onChange={this.handleOptionChange}  />
+          <input
+            id="metricA"
+            type="radio"
+            name="metric"
+            value={optionA}
+            checked={selectedOption === optionA}
+            onChange={this.handleOptionChange}
+          />
           <label htmlFor="metricA">{optionA}</label>
         </div>
         <div>
-          <input id="metricB" type="radio" name="metric" />
+          <input
+            id="metricB"
+            type="radio"
+            name="metric"
+            value={optionB}
+            checked={selectedOption === optionB}
+            onChange={this.handleOptionChange}
+          />
           <label htmlFor="metricB">{optionB}</label>
         </div>
+        {isOptionASelected !== null && isOptionASelected ? (
+          <h1>FormA</h1>
+        ) : (
+          <h1>FormB</h1>
+        )}
       </StyledRadioOption>
     );
   }
